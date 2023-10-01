@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Calculator</h1>
+      </div>
+    </header>
+    <main>
+      <section class="calculator">
+        <div class="container">
+          <div class="main-count">
+            <input type="text" class="input-number"/>
+            <span class="too"> FROM </span>
+            <select class="system-count firstnumber">
+              <option value="2">2</option>
+              <option value="8">8</option>
+              <option value="10" selected>10</option>
+              <option value="16">16</option>
+            </select>
+            <span class="too"> TO </span>
+            <select class="system-count secondnumber">
+              <option value="2">2</option>
+              <option value="8">8</option>
+              <option value="10" selected>10</option>
+              <option value="16">16</option>
+            </select>
+            <button type="button" class="btn-calc" data-calculate>Calculate</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>
