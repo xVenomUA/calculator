@@ -3,46 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
-    <header class="header">
+    <section>
       <div class="container">
-        <h1 class="header__title">Calculator</h1>
-      </div>
-    </header>
-    <main>
-      <section class="calculator">
-        <div class="container">
-          <div class="main-count">
-            <input type="text" class="input-number"/>
-            <span class="too"> FROM </span>
-            <select class="system-count firstnumber">
-              <option value="2">2</option>
-              <option value="8">8</option>
-              <option value="10" selected>10</option>
-              <option value="16">16</option>
-            </select>
-            <span class="too"> TO </span>
-            <select class="system-count secondnumber">
-              <option value="2">2</option>
-              <option value="8">8</option>
-              <option value="10" selected>10</option>
-              <option value="16">16</option>
-            </select>
-            <button type="button" class="btn-calc" data-calculate>Calculate</button>
+        <div class="calculator">
+          <p class="output"></p>
+          <div class="btn-click">
+            <button data-digit="C" class="digit">Ac</button>
+            <button data-digit="DEL" class="digit">X</button>
+            <button data-digit="/" class="digit js-btn">/</button>
+            <button data-digit="*" class="digit js-btn">*</button>
+            <button data-digit="7" class="digit">7</button>
+            <button data-digit="8" class="digit">8</button>
+            <button data-digit="9" class="digit">9</button>
+            <button data-digit="-" class="digit js-btn">-</button>
+            <button data-digit="4" class="digit">4</button>
+            <button data-digit="5" class="digit">5</button>
+            <button data-digit="6" class="digit">6</button>
+            <button data-digit="+" class="digit plus js-btn">+</button>
+            <button data-digit="1" class="digit dig">1</button>
+            <button data-digit="2" class="digit dig dig-second">2</button>
+            <button data-digit="3" class="digit dig dig-three">3</button>
+            <button data-digit="0" class="digit">0</button>
+            <button data-digit="." class="digit">.</button>
+            <button data-digit="=" class="digit js-btn">=</button>
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <div class="object"></div>
+      </div>
+    </section>
     <script src="./js/calculator.js"></script>
   </body>
 </html>
